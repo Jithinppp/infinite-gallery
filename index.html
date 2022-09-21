@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta name="google" content="notranslate" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>infinite-gallery gallery</title>
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- header section -->
+    <header class="navigation">
+      <div class="title-container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-box"
+        >
+          <path
+            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+          ></path>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+          <line x1="12" y1="22.08" x2="12" y2="12"></line>
+        </svg>
+        <h2 class="headline">infinite Gallery</h2>
+      </div>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jithin-p-8396501b7/"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-linkedin"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/Jithinppp/infinite-gallery"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-github"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- description section -->
+    <section class="description-container">
+      <p>
+        a small project that shows how seamless loading works using Unsplash API
+        here a eventListener attached to the DOM itself with scroll event,
+        therefore every scroll it get executed and if the scroll happens
+        <mark>
+          (window.innerHeight + window.scrollY >= document.body.offsetHeight -
+          1000)</mark
+        >
+        some conditions the API call get repeated and a new random images will
+        fetched from the database and it will appended to the image container
+        element
+      </p>
+    </section>
+    <!-- image gallery -->
+    <div class="container">
+      <!-- <div class="image-box">
+        <img src="./hi-estudio-vrrVHprRsNE-unsplash.jpg" alt="" />
+        <div class="overlay">
+          <span class="alt-info">estudio</span>
+        </div>
+      </div> -->
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
